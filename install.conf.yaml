@@ -5,6 +5,7 @@
 - clean: ['~']
 
 - link:
+    ~/.antigen: antigen
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
