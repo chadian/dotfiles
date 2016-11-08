@@ -8,6 +8,9 @@
     ~/.antigen: antigen
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
+    ~/.tmux/plugins/tpm:
+      create: true
+      path: tpm
     ~/.vim: vim
     ~/.zshrc: zshrc
 
