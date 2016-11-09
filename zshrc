@@ -22,6 +22,10 @@ antigen bundle sindresorhus/pure
 # Tell antigen that you're done.
 antigen apply
 
+## ALIAS and CLI HELPERS
+
+alias brr='for ref in $(git for-each-ref --sort=-committerdate --format="%(refname)" refs/heads/ ); do git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset %C(yellow)%d%Creset %C(bold blue)<%an>%Creset%n" | cat ; done | awk '"'! a["'$0'"]++'"
+
 ## PATH
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
