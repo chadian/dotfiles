@@ -25,3 +25,7 @@ antigen apply
 ## PATH
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+## ALIAS
+
+alias st='open -a /Applications/Sublime\ Text.app'
