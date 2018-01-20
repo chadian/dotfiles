@@ -13,7 +13,9 @@
       path: tpm
     ~/.vim: vim
     ~/.zshrc: zshrc
+    ~/.gitignore_global: gitignore_global
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [brew install reattach-to-user-namespace] 
+  - [brew install reattach-to-user-namespace]
+  - [git config --global core.excludesfile ~/.gitignore_global]
