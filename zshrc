@@ -11,6 +11,7 @@ antigen bundle z
 antigen bundle osx
 antigen bundle npm
 antigen bundle docker
+antigen bundle docker-compose
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
