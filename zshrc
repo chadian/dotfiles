@@ -13,6 +13,9 @@ antigen bundle npm
 antigen bundle docker
 antigen bundle docker-compose
 
+# fish shell-like auto-complete
+antigen bundle https://github.com/zsh-users/zsh-autosuggestions.git
+
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
