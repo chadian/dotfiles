@@ -16,6 +16,9 @@
     ~/.gitignore_global: gitignore_global
 
 - shell:
+  - [touch ~/.zshrc.local]
   - [git submodule update --init --recursive, Installing submodules]
   - [brew install reattach-to-user-namespace]
+  - [brew install zsh zsh-completions]
+  - [chsh -s /bin/zsh, Setting zsh to be the default shell]
   - [git config --global core.excludesfile ~/.gitignore_global]
