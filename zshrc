@@ -31,6 +31,11 @@ zstyle ':completion:*:manuals'    separate-sections true
 zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
 
+## CODE COMPLETIONS
+
+# fzf, command history and file browser. Installed via brew
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 ## ALIAS and CLI HELPERS
 
 alias brr='for ref in $(git for-each-ref --sort=-committerdate --format="%(refname)" refs/heads/ ); do git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset %C(yellow)%d%Creset %C(bold blue)<%an>%Creset%n" | cat ; done | awk '"'! a["'$0'"]++'"
@@ -49,3 +54,4 @@ export NVM_DIR="$HOME/.nvm"
 
 ## Source a zshrc local file for untracked machine-specific config/overrides
 source ~/.zshrc.local
+
