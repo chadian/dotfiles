@@ -19,12 +19,18 @@
   - [touch ~/.zshrc.local]
   - [git submodule update --init --recursive, Installing submodules]
   - [brew install reattach-to-user-namespace]
-  - [brew install zsh zsh-completions]
-  - [brew install fzf]
-  - [brew install diff-so-fancy]
-  - [chsh -s /bin/zsh, Setting zsh to be the default shell]
   - [git config --global core.excludesfile ~/.gitignore_global]
 
+  - [brew install zsh zsh-completions]
+  - [chsh -s /bin/zsh, Setting zsh to be the default shell]
+  - [brew install the_silver_searcher]
+  - [brew install ripgrep]
+  - [brew install fzf]
+  # sets up fzf key bindings and fuzzy completion
+  - [$(brew --prefix)/opt/fzf/install]
+
+
+  - [brew install diff-so-fancy]
   # git settings from https://github.com/so-fancy/diff-so-fancy#improved-colors-for-the-highlighted-bits
   - [git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"]
   - [git config --global color.ui true]
