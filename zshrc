@@ -8,7 +8,6 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle z
-antigen bundle osx
 antigen bundle npm
 antigen bundle docker
 antigen bundle docker-compose

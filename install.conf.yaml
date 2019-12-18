@@ -16,17 +16,20 @@
     ~/.gitignore_global: gitignore_global
 
 - shell:
-  - [touch ~/.zshrc.local]
   - [git submodule update --init --recursive, Installing submodules]
   - [brew install reattach-to-user-namespace]
   - [git config --global core.excludesfile ~/.gitignore_global]
 
+  - [touch ~/.zshrc.local]
   - [brew install zsh zsh-completions]
   - [chsh -s /bin/zsh, Setting zsh to be the default shell]
+
+  - [brew install jq]
   - [brew install the_silver_searcher]
   - [brew install ripgrep]
+
   - [brew install fzf]
-  # sets up fzf key bindings and fuzzy completion
+  # setup fzf key bindings and fuzzy completion
   - [$(brew --prefix)/opt/fzf/install]
 
 
