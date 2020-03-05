@@ -11,7 +11,6 @@
     ~/.tmux/plugins/tpm:
       create: true
       path: tpm
-    ~/.vim: vim
     ~/.zshrc: zshrc
     ~/.gitignore_global: gitignore_global
 
@@ -19,6 +18,8 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [brew install reattach-to-user-namespace]
   - [git config --global core.excludesfile ~/.gitignore_global]
+  - [git config --global alias.graph 'log --graph --oneline --all']
+  - [git config --global alias.line 'log --oneline --decorate']
 
   - [touch ~/.zshrc.local]
   - [brew install zsh zsh-completions]
