@@ -29,6 +29,9 @@
   - [brew install the_silver_searcher]
   - [brew install ripgrep]
 
+  # shell theme
+  - [brew install starship]
+
   - [brew install fzf]
   # setup fzf key bindings and fuzzy completion
   - [$(brew --prefix)/opt/fzf/install]

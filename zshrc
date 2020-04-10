@@ -18,10 +18,6 @@ antigen bundle https://github.com/zsh-users/zsh-autosuggestions.git
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Load the theme.
-antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
-
 # Tell antigen that you're done.
 antigen apply
 
@@ -29,6 +25,9 @@ antigen apply
 zstyle ':completion:*:manuals'    separate-sections true
 zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
+
+# Setup starship shell theme (installed previously via brew)
+eval "$(starship init zsh)"
 
 ## CODE COMPLETIONS
 
